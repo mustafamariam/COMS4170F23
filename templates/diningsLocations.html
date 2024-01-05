@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Profile</title>
+</head>
+<body>
+  <div class="topnav">
+    <img src="{{url_for('static', filename='logo.png')}}" class="logo"/>
+      <a class="active" href="/">home</a>
+      <a href="/quiz-page">quiz</a>
+      <a href="/community-uploads">reviews</a>
+      <a href="/dininglocations">dining locations</a>
+      <a href="/profile">profile</a>
+    </div>
+      <main className="Dietary-body">
+      <section className="Dietary-section">
+        <CENTER><h1>DINING HALL LOCATIONS</h1></CENTER>
+        <h2> Recommended for you</h2>
+        <div class="grid-container">
+            <div class="grid-item"><img src="{{url_for('static', filename='john jay pic.png')}}" class="img"/>
+              <a href="https://dining.columbia.edu"><p>John Jay</p></a>
+            </div>
+            <div class="grid-item"><img src="{{url_for('static', filename='faculty.png')}}"class="img" />
+              <a href="https://dining.columbia.edu"><p>Faculty House</p></a>
+            </div>
+            
+            <div class="grid-item"><img src="{{url_for('static', filename='ferris.png')}}"class="img"/>
+              <a href="https://dining.columbia.edu"><p>Ferris Booth Commons</p></a>
+            </div>  
+        </div>
+
+        <h2> Quick Meals</h2>
+        <div class="grid-container">
+            <div class="grid-item"><img src="{{url_for('static', filename='fac shack.png')}}"class="img"/>
+              <a href="https://dining.columbia.edu"><p>Fac Shack</p></a>
+            </div>
+            <div class="grid-item"><img src="{{url_for('static', filename='jjs.png')}}"class="img"/>
+              <a href="https://dining.columbia.edu"><p>JJs</p></a>
+            </div>
+            <div class="grid-item"><img src="{{url_for('static', filename='diana.png')}}"class="img"/> 
+              
+              <a href="https://dining.columbia.edu"><p>Diana Center Cafe</p></a>
+            </div> 
+        </div>
+        
+      </section>
+      <!-- <center> <button type="submit" class="submit-button">BACK</button></center> -->
+    </main>
+    <div class="footer"> </div>
+  </body>
+  </html>
+
+
+<style> 
+
+/* a {
+  text-decoration: none;
+  
+
+} */
+.img {
+    width: 374px;
+    height: 203px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.grid-item {
+  text-align: center;
+  padding-right: 5%;
+}
+
+.imgs {
+  display: inline-block;
+  justify-content: left;
+}
+.active {
+    font-size: 2%;
+}
+    
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.submit-button {
+  justify-content: center;
+  text-align: center;
+  background-color: #0056b3; 
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px; 
+  width: 19em;
+  height: 4em;
+}
+
+.Community-image {
+  background-color: #fff;
+  padding: 7px;
+  border-radius: 5px;
+  /* border: 1px solid #ccc; */
+  text-align: left;
+  width: 24em;
+  
+}
+
+.submit-button:hover {
+  background-color: #0056b3; 
+}
+p {
+  font: Inter;
+  color: grey;
+  font-size: 0.75rem;
+  /* font-style: italic; */
+  font-weight:400;
+  padding-top: 0;
+  margin-top: 1%;
+  margin-bottom: 0;
+
+
+}
+
+.footer {
+  text-align: center;
+justify-content: center;
+  position:relative;
+  background-color: #0056b3;
+  left: 0;
+  bottom: auto;
+  width: 100%;
+  height: 5%;
+}
+
+
+    .tab {
+      display: inline-block;
+      margin-left: 38%;
+    }
+       nav {
+            text-align: center;
+            justify-content: center;
+
+            border-bottom: 3px solid navy;
+          }
+          ul {
+            justify-content: center;
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            
+          }
+          
+          li {
+            float: left;
+          }
+          
+          li a {
+            text-align: center;
+            display: block;
+            padding: 8px;
+            color: navy;
+          }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Inter;
+    /* text-align: center;
+    justify-content: center; */
+    font-size:14px;
+}
+.DietaryRestrictions {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.Dietary-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+
+
+.Dietary-body {
+  padding: 10px;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  justify-content: center;
+  font-size: 2em;
+}
+
+h2 {
+    font: Inter;
+  font-weight: bold;
+  padding: 0;
+  font-size: 120%;
+
+
+}
+@media screen and (min-width: 700px) {
+    h1 {
+    font-size: 3em;
+  }
+}
+
+.Dietary-form {
+  display: flex;
+  /* flex-direction: column; */
+  /* gap: 4px; Space between form items */
+  justify-content: center;
+}
+
+.Dietary-label {
+  display: block;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.Dietary-description {
+  display: block;
+  font-size: smaller;
+  color: #666;
+}
+
+.Dietary-back {
+  background-color: #004080;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.footer {
+  text-align: center;
+    justify-content: center;
+  position: fixed;
+  background-color: rgb(55,73,141);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+
+  padding-bottom: 0;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  border-bottom: solid;
+}
+
+.topnav a {
+  float: right;
+  color: rgb(55,73,141);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2.0vh;
+  margin: 0;
+  
+}
+
+@media screen and (min-width: 700px) {
+    .topnav a {
+    font-size: 3.0vh;
+  }
+}
+
+.topnav a:hover {
+  background-color: rgb(55,73,141);
+  color: white;
+}
+
+.logo {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 12%;
+    height: 12%;
+}
+
+/* .Dietary-label input[type="checkbox"]:hover,
+.Dietary-label input[type="checkbox"]:focus {
+}
+
+.Dietary-back:hover,
+.Dietary-back:focus {
+} */
+</style>

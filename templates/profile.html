@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Profile</title>
+</head>
+<body>
+  <div class="topnav">
+    <img src="{{url_for('static', filename='logo.png')}}" class="logo"/>
+      <a class="active" href="/">home</a>
+      <a href="/quiz-page">quiz</a>
+      <a href="/community-uploads">reviews</a>
+      <a href="/dininglocations">dining locations</a>
+      <a href="/profile">profile</a>
+    </div>
+      <main className="Dietary-body">
+      <section className="Dietary-section">
+        <CENTER><h1>PROFILE</h1>
+
+        <form className="Dietary-form"class="tab">
+          
+          <div class="Community-image">
+          <label for="option1"> Your account</label> 
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <a href="/quiz-page" ><i class="arrow"></i></a>
+          <p> Update contact information, school settings etc. </p>
+        </div>
+          <br>
+        
+          <div class="Community-image">
+            <label for="option1">Change dietary restrictions</label> 
+            &nbsp&nbsp
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <a href="/dietary-restrictions" ><i class="arrow"></i></a>
+            <p> Update or add dietary restrictions  </p>
+          </div>
+            <br>
+
+            <div class="Community-image">
+                <label for="option1">Notifications</label> 
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <a href="/quiz-page" ><i class="arrow"></i></a>
+                <p> Select which notifications your receive from us  </p>
+              </div>
+                <br>
+
+         <div class="Community-image">
+                <label for="option1">Help</label> 
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <a href="/quiz-page" ><i class="arrow"></i></a>
+                <p> Need help? Email mm5970@columbia.edu  </p>
+              </div>
+                <br>     
+        
+          <br>
+        </form>
+      </section>
+    </CENTER>
+      <!-- <center> <button type="submit" class="submit-button">BACK</button></center> -->
+    </main>
+    <div class="footer"> </div>
+  </body>
+  </html>
+
+
+<style> 
+.imgs {
+  display: inline-block;
+  justify-content: left;
+}
+    
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.submit-button {
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(55,73,141);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px; 
+  width: 19em;
+  height: 4em;
+}
+
+.Community-image {
+  background-color: #fff;
+  padding: 7px;
+  border-radius: 5px;
+  /* border: 1px solid #ccc; */
+  text-align: left;
+  width: 24em;
+  
+}
+
+.submit-button:hover {
+  background-color: navy;
+}
+p {
+  font: Inter;
+  color: grey;
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+  /* font-style: italic; */
+  font-weight:400;
+
+}
+
+.footer {
+  text-align: center;
+    justify-content: center;
+  position:relative;
+  background-color: rgb(55,73,141);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+}
+
+    .tab {
+      display: inline-block;
+      margin-left: 4%;
+    }
+       nav {
+            text-align: center;
+            justify-content: center;
+
+            border-bottom: 3px solid navy;
+          }
+          ul {
+            justify-content: center;
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            
+          }
+          
+          li {
+            float: left;
+          }
+          
+          li a {
+            text-align: center;
+            display: block;
+            padding: 8px;
+            color: navy;
+          }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Inter;
+    /* text-align: center;
+    justify-content: center; */
+    font-size:14px;
+}
+.DietaryRestrictions {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.Dietary-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+/* .Dietary-logo {
+} */
+
+.Dietary-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.Dietary-nav li {
+  cursor: pointer;
+}
+
+.Dietary-body {
+  padding: 20px;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  justify-content: center;
+  font-size: 3em;
+}
+
+.Dietary-form {
+  display: flex;
+  /* flex-direction: column; */
+  /* gap: 4px; Space between form items */
+  justify-content: center;
+}
+
+.Dietary-label {
+  display: block;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.Dietary-description {
+  display: block;
+  font-size: smaller;
+  color: #666;
+}
+
+.Dietary-back {
+  background-color: #004080;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.footer {
+  text-align: center;
+    justify-content: center;
+  position: fixed;
+  background-color: rgb(55,73,141);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  border-bottom: solid;
+}
+
+.topnav a {
+  float: right;
+  color: navy;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2.0vh;
+  margin: 0;
+  
+}
+
+@media screen and (min-width: 700px) {
+    .topnav a {
+    font-size: 3.0vh;
+  }
+}
+
+.topnav a:hover {
+  background-color: navy;
+  color: white;
+}
+
+.logo {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 12%;
+    height: 12%;
+}
+
+/* .Dietary-label input[type="checkbox"]:hover,
+.Dietary-label input[type="checkbox"]:focus {
+}
+
+.Dietary-back:hover,
+.Dietary-back:focus {
+} */
+</style>

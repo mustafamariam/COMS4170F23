@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+
+body {
+    font-family: Inter;
+    /* text-align: center;
+    justify-content: center; */
+    font-size:14px;
+}
+
+h1 {
+  text-align: center;
+    justify-content: center;
+  font-weight:500;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: black;
+  
+}
+
+h2 {
+  text-align: center;
+    justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.dining-hall-name {
+  text-align: center;
+    justify-content: center;
+  font-size: 3rem;
+  font-weight:lighter;
+  margin-bottom: 2rem;
+}
+
+.footer {
+  text-align: center;
+    justify-content: center;
+  position: fixed;
+  background-color:  rgb(55,73,141);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+}
+.submit-button {
+  text-align: center;
+    justify-content: center;
+  background-color:  rgb(55,73,141); 
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none; 
+}
+
+a.submit-button:hover {
+  text-align: center;
+    justify-content: center;
+  background-color: navy; 
+}
+
+
+.footer {
+  text-align: center;
+    justify-content: center;
+  position: fixed;
+  background-color:  rgb(55,73,141);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  border-bottom: solid;
+}
+
+.topnav a {
+  float: right;
+  color:  rgb(55,73,141);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2.0vh;
+  margin: 0;
+  
+}
+
+@media screen and (min-width: 700px) {
+    .topnav a {
+    font-size: 3.0vh;
+  }
+}
+
+.topnav a:hover {
+  background-color: rgb(55,73,141);
+  color: white;
+}
+
+.logo {
+    justify-content: left;
+    align-content: center;
+
+    width: 12%;
+    height: 12%;
+}
+
+</style>
+
+
+<body>
+  <div class="topnav">
+    <img src="{{url_for('static', filename='logo.png')}}" class="logo"/>
+      <a class="active" href="/">home</a>
+      <a href="/quiz-page">quiz</a>
+      <a href="/community-uploads">reviews</a>
+      <a href="/dininglocations">dining locations</a>
+      <a href="/profile">profile</a>
+    </div>
+    <center>
+    <div className="QuizResults">
+        <h1>Quiz Results</h1>
+        <h2>Your Ideal Dining Hall</h2>
+        <h1>JOHN JAY DINING HALL</h1>
+        <br><br>
+        <!-- <div className="dining-hall-name">{diningHallName}</div> -->
+        <a href="/community-uploads" class="submit-button">SEE WHAT OTHERS ARE SAYING</a>
+        <!-- <button type="submit" class="submit-button">SEE WHAT OTHERS ARE SAYING</button> -->
+      </div>
+      <div class="footer"> </div>
+    </center>
+</body>
+</html>

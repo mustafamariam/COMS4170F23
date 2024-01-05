@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Community Uploads</title>
+</head>
+<body>
+  <div class="topnav">
+    <img src="{{url_for('static', filename='logo.png')}}" class="logo"/>
+      <a class="active" href="/">home</a>
+      <a href="/quiz-page">quiz</a>
+      <a href="/community-uploads">reviews</a>
+      <a href="/dininglocations">dining locations</a>
+      <a href="/profile">profile</a>
+    </div>
+       
+    </header>
+    <main class="Community-body">
+      <h1>SEE WHAT OTHERS ARE EATING</h1>
+      <section class="Community-section">
+        <div class="Community-image">
+          <center> <img src="{{url_for('static', filename='stir-fry.png')}}"/></center>
+          <!-- <img src="stir-fry.png" alt="Stir Fry" /> -->
+          <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            Alex J.<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            Stir Fry today... tofu option was tasty.</p>
+        </div>
+      </section>
+      <section class="Community-section">
+        <div class="Community-image">
+          <center><img src="{{url_for('static', filename='jerk-chicken.png')}}"/>
+          </center>  
+         <p> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          Josh Z.<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspJerk Chicken today – avoid!!!</p>
+        
+        </div>
+      </section>
+      <br>
+      <a href="/submit-review" class="submit-button">SUBMIT A REVIEW</a>
+    </main>
+
+    <div class="footer"> </div>
+
+  <style>
+
+  * {
+  box-sizing: border-box;
+}
+    .Community {
+      text-align: center;
+    justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 50px; 
+  text-align: center;
+}
+
+body {
+    font-family: Inter;
+    /* text-align: center;
+    justify-content: center; */
+    font-size:14px; 
+}
+
+.Community-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+/* .Community-logo {
+} */
+.test {
+  width: 200%;
+  height: 100%;
+}
+
+
+.Community-body {
+  padding: 5;
+  text-align: center;
+}
+
+.Community-section {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+
+
+}
+/* 
+.Community-image {
+  
+  text-align: left;
+  width: 75%;
+  height: 75%;
+  
+}  */
+
+img {
+  max-width: 75%;
+  height: auto;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  margin-top: 4px;
+  color: #333;
+  font-size: 12px;
+}
+
+.Community-button {
+  background-color: rgb(55,73,141);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.submit-button {
+  background-color: rgb(55,73,141);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px; 
+  text-decoration: none;
+}
+
+.submit-button:hover {
+  background-color: navy;
+}
+
+/* .Community-button:hover,
+.Community-button:focus {
+
+} */
+
+.footer {
+  text-align: center;
+    justify-content: center;
+  position: fixed;
+  background-color:rgb(55,73,141);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  border-bottom: solid;
+}
+
+.topnav a {
+  float: right;
+  color: rgb(55,73,141);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2.0vh;
+  margin: 0;
+  
+}
+
+@media screen and (min-width: 700px) {
+    .topnav a {
+    font-size: 3.0vh;
+  }
+}
+
+.topnav a:hover {
+  background-color: rgb(55,73,141);
+  color: white;
+}
+
+.logo {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 12%;
+    height: 12%;
+}
+  
+  </style>
+</body>
+</html>

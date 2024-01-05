@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is the homepage</title>
+    
+</head>
+<style>
+   
+
+body {
+  font-family: Inter; 
+    /* text-align: center;
+    justify-content: center; */
+    vertical-align: middle;
+    font-size:14px;
+}
+
+.Home {
+  padding-top: 80px; 
+}
+
+.Home-header {
+  background-color: #fff; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+/* .Home-logo {
+  width: auto;
+  height: 50px; 
+} */
+
+.nav-links {
+  list-style-type: none; 
+  display: flex; 
+  gap: 20px; 
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease; 
+}
+
+.nav-links a:hover {
+  color: #0056b3; 
+}
+
+.Home-main {
+  margin: 0 auto; 
+  padding: 0 20px; 
+  max-width: 800px;
+  text-align: center;
+}
+
+.Home-main h1 {
+  font-size: 2rem; 
+  margin-bottom: 0.5rem; 
+  margin-left:-200px;
+}
+
+.Home-main p {
+  font-size: 1.5rem; 
+  margin-left:-200px;
+}
+.footer {
+  text-align: center;
+    justify-content: center;
+  position: fixed;
+  background-color: rgb(55,73,141);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+
+  padding-bottom: 0;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  border-bottom: solid;
+}
+
+.topnav a {
+  float: right;
+  color: rgb(55,73,141);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2.0vh;
+  margin: 0;
+
+}
+
+
+@media screen and (min-width: 700px) {
+    .topnav a {
+    font-size: 3.0vh;
+  }
+}
+
+.topnav a:hover {
+  background-color: rgb(55,73,141);
+  color: white;
+}
+
+.logo {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 12%;
+    height: 12%;
+}
+
+
+.home-button {
+  padding: 10px 25px; 
+  font-size: 1rem; 
+  font-weight: bold; 
+  color: #FFFFFF; 
+  background-color: #0062cc; 
+  border: 1px solid transparent; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+  transition: background-color 0.3s; 
+  margin-top: 20px; 
+  display: block;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.home-button:hover {
+  background-color: #0044cc; 
+}
+
+</style>
+<script> 
+
+
+</script>
+<body> 
+  <div class="topnav">
+    <img src="{{url_for('static', filename='logo.png')}}" class="logo"/>
+      <a class="active" href="/">home</a>
+      <a href="/quiz-page">quiz</a>
+      <a href="/community-uploads">reviews</a>
+      <a href="/dininglocations">dining locations</a>
+      <a href="/profile">profile</a>
+    </div>
+    
+        
+        <style>
+          .logo {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 12%;
+    height: 12%;
+}
+          nav {
+            text-align: center;
+            justify-content: center;
+
+            border-bottom: 3px solid navy;
+          }
+          ul {
+            justify-content: center;
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            
+          }
+          
+          li {
+            float: left;
+          }
+          
+          li a {
+            text-align: center;
+            display: block;
+            padding: 8px;
+            color: navy;
+          }
+          h1 {
+            font-weight: bolder;
+  text-align: center;
+    justify-content: center;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+a.submit-button {
+  background-color:rgb(55,73,141); 
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px; 
+  text-decoration: none;
+}
+
+
+a.submit-button:hover {
+  background-color: navy; 
+}
+          </style>
+      </nav> <br><br><br><br><br><br><br><br><br><br>
+      <center>
+      <h1>WELCOME</h1> 
+      <br>
+      <a href="/quiz-page" class="submit-button">TAKE THE DAILY QUIZ</a>
+  
+      <a href="/dietary-restrictions" class="submit-button">UPDATE DIETARY RESTRICTIONS</a>
+      
+    </center>
+        </div>
+        <div className="home-content">
+        
+          
+        </div>
+      </div>
+      <div class="footer"> </div>
+</body>
+</html>
